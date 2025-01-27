@@ -136,6 +136,10 @@ ENV/
 env.bak/
 venv.bak/
 
+
+# neglecting git files
+.git
+
 # Spyder project settings
 .spyderproject
 .spyproject
