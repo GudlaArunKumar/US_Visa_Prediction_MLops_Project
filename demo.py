@@ -1,8 +1,7 @@
-from us_visa.exception import USVisaException 
 import sys 
 
+from us_visa.components.data_ingestion import DataIngestion 
+from us_visa.pipeline.training_pipeline import TrainingPipeline
 
-try:
-    a = 5 / 0 
-except Exception as e:
-    raise USVisaException(e, sys)
+ing_pipeline = TrainingPipeline()
+ing_pipeline.run_train_pipeline()
